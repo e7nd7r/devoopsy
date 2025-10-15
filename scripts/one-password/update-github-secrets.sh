@@ -56,9 +56,9 @@ ensure_gh_auth() {
         echo "ℹ️ 'gh' not found; checking SSH auth to $host..." >&2
 
         cat >&2 <<EOF
-        ❌\e[31m Not authenticated.\e[0m
-        - Install GitHub CLI: https://cli.github.com/ (recommended), or
-        - Set up SSH keys: https://docs.github.com/authentication/connecting-to-github-with-ssh
+❌ Not authenticated:
+- Install GitHub CLI: https://cli.github.com/ (recommended), or
+- Set up SSH keys: https://docs.github.com/authentication/connecting-to-github-with-ssh
         EOF
 
         return 1
