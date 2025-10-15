@@ -1,0 +1,115 @@
+# ========================
+# General / OS Artifacts
+# ========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.out
+*.err
+
+# IDE / Editor Directories
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# Python / Node (if used for tooling)
+__pycache__/
+node_modules/
+
+# ========================
+# Shell Scripts
+# ========================
+# Skip compiled binaries or temporary artifacts
+*.sh~
+*.env
+.env*
+*.secret
+*.secrets
+*.bak
+*.retry
+
+# ========================
+# Docker
+# ========================
+# Ignore local Docker build artifacts
+*.tar
+docker-compose.override.yml
+# Optional: Uncomment if you don't want local dev env files
+# docker-compose.yml
+
+# ========================
+# Kubernetes Manifests
+# ========================
+# Skip local cluster state or temporary generated files
+kubeconfig*
+*.kubeconfig
+*.kube
+*.yaml~
+*.yml~
+tmp/
+
+# ========================
+# Helm Charts
+# ========================
+# Ignore build outputs and dependencies
+charts/
+*.tgz
+Chart.lock
+values.local.yaml
+values.dev.yaml
+
+# ========================
+# Terraform
+# ========================
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform/
+.terraformrc
+terraform.rc
+terraform.tfvars
+terraform.tfvars.json
+.plan
+*.plan
+*.tfplan
+
+# ========================
+# Ansible (if used)
+# ========================
+*.retry
+*.vault
+*.vault_pass
+*.vault_password_file
+
+# ========================
+# Secrets & Credentials
+# ========================
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.jks
+*.kubeconfig
+secret.*
+secrets.*
+*.enc
+*.gpg
+
+# ========================
+# Miscellaneous
+# ========================
+tmp/
+cache/
+*.bak
+backup/
